@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Redirecting…</title>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const code = params.get("code");
+    const state = params.get("state");
+    window.location = `com.laserworxinventory://oauth2redirect?code=${code}&state=${state}`;
+  </script>
+</head>
+<body>
+  Redirecting…
+</body>
+</html>
