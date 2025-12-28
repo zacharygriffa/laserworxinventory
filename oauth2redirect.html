@@ -4,13 +4,8 @@
     <meta charset="utf-8" />
     <title>Redirecting…</title>
     <script>
-      // Grab the full URL QuickBooks redirected to
       const url = window.location.href;
-
-      // Extract everything after the "?"
       const query = url.split("?")[1];
-
-      // Forward to your Android app using your custom scheme
       window.location.replace("laserworxinventory://oauthredirect?" + query);
     </script>
   </head>
